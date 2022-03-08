@@ -1,0 +1,166 @@
+{
+  "settings": {
+    "currentPage": "index.html",
+    "theme": {
+      "name": "bistrom5",
+      "title": "BistroM5",
+      "styling": {
+        "primaryColor": "#e74c3c",
+        "secondaryColor": "#333333",
+        "successColor": "#f9f9f9",
+        "infoColor": "#96c85b",
+        "warningColor": "#e3ba52",
+        "dangerColor": "#e5673b",
+        "mainFont": "Brygada 1918",
+        "display1Font": "El Messiri",
+        "display1Size": "4.375",
+        "display2Font": "El Messiri",
+        "display2Size": "3.125",
+        "display5Font": "El Messiri",
+        "display5Size": 2.0625,
+        "display7Font": "El Messiri",
+        "display7Size": 1.5625,
+        "display4Font": "El Messiri",
+        "display4Size": 1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "titlePreset": "Burger House",
+      "nameSelectPreset": "burger_house",
+      "presetSourceTheme": "bistrom5",
+      "additionalSetColors": [
+        "#f1ac19",
+        "#a5a5a9"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "name": "AbouAzzouz",
+    "versionFirst": "5.4.1",
+    "siteFonts": [
+      {
+        "css": "'Brygada 1918', serif",
+        "name": "Brygada 1918",
+        "url": "https://fonts.googleapis.com/css?family=Brygada+1918:400,500,600,700,400i,500i,600i,700i"
+      },
+      {
+        "css": "'Urbanist', sans-serif",
+        "name": "Urbanist",
+        "url": "https://fonts.googleapis.com/css?family=Urbanist:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      },
+      {
+        "css": "'El Messiri', sans-serif",
+        "name": "El Messiri",
+        "url": "https://fonts.googleapis.com/css?family=El+Messiri:400,500,600,700"
+      }
+    ],
+    "imageResize": true,
+    "global_header_custom": "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>",
+    "favicon": "@PROJECT_PATH@/assets/images/icon-128x127.png",
+    "mbrsiteDomain": "1lc0huurox",
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.4.1"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "مطعم عبدالعزيز",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "meta_image": "@PROJECT_PATH@/assets/images/whatsapp-image-2022-03-07-at-4.42.26-pm-1280x960.jpg"
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "img": {
+              "object-fit": "cover",
+              "height": "auto"
+            },
+            "@media (max-width: 800px)": {
+              "img": {}
+            },
+            ".container-fluid when (@noGutters)": {
+              "padding": "0"
+            }
+          },
+          "_name": "image1",
+          "_sourceTheme": "bistrom5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image1\" group=\"Images & Videos\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"checkbox\" title=\"No Gutters\" name=\"noGutters\" condition=\"fullWidth\">\n        <header>Image</header>\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"6\">\n        <input type=\"range\" name=\"heightImage\" title=\"Height\" min=\"3\" max=\"10\" step=\".5\" value=\"3\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#a5a5a9\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth, 'no-gutters' : noGutters}\">\n        <div class=\"row justify-content-center\" >\n            <div class=\"col-6 col-lg-{{textWidth}}\" >\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/-1-1036x499.png\" alt=\"Mobirise\" >\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sZt2kbtUI2",
+          "_anchor": "image1-0",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "box-shadow": "inset 0 7px 9px -7px rgba(0, 0, 0, 0.4)",
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".image-wrapper, img": {
+              "width": "100%",
+              "object-fit": "contain"
+            },
+            "img": {
+              "display": "inline-block",
+              "width": "(@imageWidth * 3rem)"
+            },
+            ".mbr-section-title": {
+              "margin": "25px 0"
+            },
+            ".mbr-text": {
+              "margin-bottom": "19px"
+            },
+            ".mbr-section-title, .image-wrapper": {
+              "color": "#202020"
+            },
+            "height": "100%"
+          },
+          "_name": "article1",
+          "_sourceTheme": "bistrom5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"Article1\" group=\"Article\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\">\n    \n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Width\" name=\"contentWidth\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value>Left</option>\n            <option value=\"justify-content-center\" selected>Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Image\" name=\"showImage\">\n        <input type=\"range\" inline title=\"Width\" name=\"imageWidth\" min=\"1\" max=\"5\" step=\"1\" value=\"2\" condition=\"showImage\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/whatsapp-image-2022-03-07-at-4.42.26-pm-1280x960.jpg\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#eae8e4\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#a5a5a9\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n            <div class=\"row {{contentAlign}}\">\n                <div class=\"col-12 col-md-12 col-lg-{{contentWidth}} align-center\" mbr-if=\"showSubtitle || showTitle || showText\">\n                    <div class=\"main_header text-center text-white\">\n                        <div class=\"image-wrapper\" mbr-if=\"showImage\">\n                            <img src=\"../_images/logo_orange.png\" alt=\"Mobirise\">\n                        </div>\n                        <h3 class=\"mbr-section-title mbr-fonts-style\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .image-wrapper\" mbr-theme-style=\"display-7\" style=\"direction:ltr;\">.التوابل ، قصة يرويها مطعمنا</h3>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-4\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ex voluptatem voluptas aut quod, autem obcaecati molestiae optio consequuntur esse dignissimos quasi alias, dolorem cum, possimus. Aspernatur unde corporis voluptatum?</p>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-lg btn-white\" href=\"https://www.snapchat.com/add/abuazoz_rest\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-snapchat mbr-iconfont mbr-iconfont-btn\"></span>حساب سناب&nbsp;</a>                        \n    <a class=\"btn btn-lg btn-white\" href=\"assets/files/menu.pdf\" data-app-placeholder=\"Type Text\" target=\"_blank\"><span class=\"icon54-v1-foodspotting mbr-iconfont mbr-iconfont-btn\"></span>المنيو</a>\n    <a class=\"btn btn-lg btn-secondary\" href=\"javascript:show_branch()\" data-app-placeholder=\"Type Text\">فروع ابو عزوز</a>                        \n    <a class=\"btn btn-lg btn-white branch\" href=\"https://goo.gl/maps/TiG4VHhm7z7xv3UX8\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-map-pin mbr-iconfont mbr-iconfont-btn\"></span>فرع&nbsp;الدمام</a>\n    <a class=\"btn btn-lg btn-white branch\" href=\"https://goo.gl/maps/ZnsRqY28XS6hPQS88\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-map-pin mbr-iconfont mbr-iconfont-btn\"></span>فرع&nbsp;الخبر</a>\n    <a class=\"btn btn-lg btn-white branch\" href=\"https://goo.gl/maps/6tPzkumAXjRawUDW9\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-map-pin mbr-iconfont mbr-iconfont-btn\"></span>فرع النخيل</a>\n    <a class=\"btn btn-lg btn-white branch\" href=\"https://goo.gl/maps/ZPC7PgM6GL6Cvg436\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-map-pin mbr-iconfont mbr-iconfont-btn\"></span>فرع&nbsp;العارض</a>\n    \n    \n    <a class=\"btn btn-lg btn-white\" href=\"tel:0537772989\" data-app-placeholder=\"Type Text\"><span class=\"mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn\"></span> الشكاوي والاقتراحات</a></div>\n\n                    </div>\n            </div>\n        </div>\n    </div>\n    [JS_CODE_0]\n</section>",
+          "_cid": "sZt46tSFxP",
+          "_anchor": "article1-1",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [
+            "<script>\n        $('.branch').hide();\n        function show_branch(){\n            $('.branch').slideDown(100);\n        }\n        $('html').css(\"height\",\"100%\");\n        $('body').css(\"height\",\"100%\");\n    </script>"
+          ],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
